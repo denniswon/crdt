@@ -32,7 +32,7 @@ State-based CRDTs are called convergent replicated data types, or CvRDTs. In con
 
 Delta state CRDTs (or simply Delta CRDTs) are optimized state-based CRDTs where only recently applied changes to a state are disseminated instead of the entire state.
 
-Comparison
+**Comparison**
 While CmRDTs place more requirements on the protocol for transmitting operations between replicas, they use less bandwidth than CvRDTs when the number of transactions is small in comparison to the size of internal state. However, since the CvRDT merge function is associative, merging with the state of some replica yields all previous updates to that replica. Gossip protocols work well for propagating CvRDT state to other replicas while reducing network use and handling topology changes.
 
 Some lower bounds on the storage complexity of state-based CRDTs are known.
