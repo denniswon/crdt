@@ -1,4 +1,4 @@
-# InterOpera CRDT
+# CRDT
 
 ## Conflict-free replicated data type
 
